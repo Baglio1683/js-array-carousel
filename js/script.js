@@ -31,22 +31,40 @@ const downAngle = document.querySelector(".ms_angledown")
 
 upAngle.addEventListener("click", function(){
 
-    items[posImage].classList.remove("ms_active")
+  
 
-    posImage++
+    if(posImage >=0 && posImage < items.length-1) {
 
-    items[posImage].classList.add("ms_active")
+       items[posImage].classList.remove("ms_active")
+       posImage++
+       items[posImage].classList.add("ms_active")
+    }
+    else{
+
+        items[posImage].classList.remove("ms_active")
+        posImage = 0
+        items[posImage].classList.add("ms_active")
+        
+    }
 
 }) 
 
 
 downAngle.addEventListener("click", function(){
 
-    items[posImage].classList.remove("ms_active")
 
-    posImage--
+    if(posImage > 0 && posImage <= items.length-1){
 
-    items[posImage].classList.add("ms_active")
+         items[posImage].classList.remove("ms_active")
+         posImage--
+         items[posImage].classList.add("ms_active")
+     }
+     else{
+        items[posImage].classList.remove("ms_active")
+        posImage = items.length-1
+        items[posImage].classList.add("ms_active")
+     }
+
 
 }) 
 
