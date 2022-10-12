@@ -1,11 +1,27 @@
-/* .back-col{
-    background-color: aqua;
-    border: 1px solid black;
-} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.ms_container{
+    height: 90vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
 
 .ms_col{
-    height: 90vh;
-    width: 80vw;
+    height: 100%;
+    width: 80%;
+}
+
+.ms_col-little{
+    width: 20%;
+    background-color: blue;
+    height: 100%;
 }
 
 .ms_item{
@@ -20,25 +36,8 @@
 }
 
 .ms_angleup{
-    top: 35px;
-    left: 39vw;
+    transform: rotate(180deg);
     background-color: white;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    padding: 0;
-    text-align: center;
-}
-
-.ms_angledown:hover , .ms_angleup:hover {
-    background-color: rgba(255, 255, 255, 0.589);
-}
-
-
-
-
-.ms_angledown{
-    background-color: white; 
     height: 30px;
     width: 30px;
     line-height: 30px;
@@ -46,4 +45,36 @@
     text-align: center;
     bottom: 11px;
     left: 39vw;
+}
+
+.ms_angledown:hover , .ms_angleup:hover {
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+.ms_angledown{
+    transform: rotate(180deg);
+    background-color: white; 
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+    top: 35px;
+    left: 39vw;
+}
+
+
+.ms_card-right{
+    width: 100%;
+    height: calc(100% / 5);
+}
+
+.ms_img-right{
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.1);
+}
+
+.ms_opacity1{
+    filter: opacity(1)
 }
