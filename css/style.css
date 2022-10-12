@@ -1,7 +1,7 @@
-.back-col{
+/* .back-col{
     background-color: aqua;
     border: 1px solid black;
-}
+} */
 
 .ms_col{
     height: 90vh;
@@ -12,7 +12,11 @@
    width: 100%;
    height: 100%;
    object-fit: cover;
-   /* display: none; */
+   display: none;
+}
+
+.ms_active{
+    display: block;
 }
 
 .ms_angleup{
